@@ -29,3 +29,17 @@
   ````
 ##### 一遍hash表
   遍历数组，将速
+  ````java
+   //一遍hash表
+      public static int[] hashTwoSum(int[] nums, int target){
+          Map<Integer,Integer> map = new HashMap<Integer, Integer>();
+          for (int i = 0; i <nums.length ; i++) {
+              int sdd= target-nums[i];
+              if(map.containsKey(sdd)){
+                  System.out.println("i:"+map.get(sdd)+"j:"+i);
+                  return new int[]{map.get(sdd),nums[i]};
+              }
+              map.put(nums[i],i);
+          }
+          throw new IllegalArgumentException("No two sum solution");
+      }````
