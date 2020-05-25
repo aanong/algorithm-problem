@@ -1,5 +1,7 @@
 package algorithm.problem;
 
+import java.util.List;
+
 /**
  * @Description 三数和
  * @Author clq
@@ -7,4 +9,18 @@ package algorithm.problem;
  * @Version 1.0
  */
 public class ThreeSum {
+    public static void main(String[] args) {
+
+    }
+
+    /**
+     * 暴力解
+     */
+    public List<List<Integer>> threeSum (int[] nums){
+
+
+
+        return null;
+    }
+
 }
